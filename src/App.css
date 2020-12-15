@@ -1,38 +1,47 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Hammersmith+One&family=Rubik&family=Russo+One&display=swap');
+
+
+body {
+    background: rgb(44, 44, 44);
+    color: dodgerblue;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+    text-align: center;
+
+    font-family: "Russo One";
+    font-size: 15vmin;
+
+    background: dodgerblue;
+    color: rgb(44, 44, 44);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2 {
+    font-family: "Bungee";
+    font-family: 8vmin;
+
+    color: dodgerblue;
+
+    text-align: center;
+    text-decoration: underline;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.info-list {
+    font-size: 5vmin;
+    font-family: "Hammersmith One";
+    margin: 0 10vmax;
 }
 
-.App-link {
-  color: #61dafb;
+.info {
+    display: flex;
+    margin: 0 5vmax;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.info-name {
+    color: #3E78B2;
+    width: 50vw;
+}
+
+.info-item {
+    color: #72DDF7
 }
