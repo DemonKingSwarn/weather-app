@@ -76,7 +76,7 @@ export default class App extends Component {
             <span className="info-name">City</span><span className="info-item">{ this.state ? this.state.name : "Loading..." }</span>
           </div>
           <div  className="info">
-            <span className="info-name">Sunset</span><span className="info-item">{ this.state ? "GMT " + (Math.floor(this.state.timezone / 3600)).toString() + ":" +  (this.state.timezone % 3600 / 60).toString()  : "Loading..." }</span>
+            <span className="info-name">Time Zone</span><span className="info-item">{ this.state ? "GMT " + (Math.floor(this.state.timezone / 3600)).toString() + ":" +  (this.state.timezone % 3600 / 60).toString()  : "Loading..." }</span>
           </div>
         </div>
       </div>
