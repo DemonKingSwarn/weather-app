@@ -25,16 +25,16 @@ export default class App extends Component {
         <div className="info-list">
           <h2>General Info</h2>
           <div  className="info">
-            <span className="info-name">Temperature</span><span className="info-item">{ this.state ? (this.state.main.temp - 273.15).toString() + "° Celsius" : "Loading..." }</span>
+            <span className="info-name">Temperature</span><span className="info-item">{ this.state ? (Math.floor(this.state.main.temp - 273.15)).toString() + "° Celsius" : "Loading..." }</span>
           </div>
           <div  className="info">
-          <span className="info-name">Min Temperature</span><span className="info-item">{ this.state ? (this.state.main.temp_min - 273.15).toString() + "° Celsius" : "Loading..." }</span>
+          <span className="info-name">Min Temperature</span><span className="info-item">{ this.state ? (Math.floor(this.state.main.temp_min - 273.15)).toString() + "° Celsius" : "Loading..." }</span>
           </div>
           <div  className="info">
-          <span className="info-name">Max Temperature</span><span className="info-item">{ this.state ? (this.state.main.temp_max - 273.15).toString() + "° Celsius" : "Loading..." }</span>
+          <span className="info-name">Max Temperature</span><span className="info-item">{ this.state ? (Math.floor(this.state.main.temp_max - 273.15)).toString() + "° Celsius" : "Loading..." }</span>
           </div>
           <div  className="info">
-          <span className="info-name">Feels Like</span><span className="info-item">{ this.state ? (this.state.main.feels_like - 273.15).toString() + "° Celsius" : "Loading..." }</span>
+          <span className="info-name">Feels Like</span><span className="info-item">{ this.state ? (Math.floor(this.state.main.feels_like - 273.15)).toString() + "° Celsius" : "Loading..." }</span>
           </div>
           <div  className="info">
           <span className="info-name">Pressure</span><span className="info-item">{ this.state ? this.state.main.pressure : "Loading..." }</span>
